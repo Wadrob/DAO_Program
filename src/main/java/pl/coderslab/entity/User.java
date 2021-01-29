@@ -1,11 +1,13 @@
 package main.java.pl.coderslab.entity;
 
+import java.util.Scanner;
+
 public class User {
 
-    private int id;
-    private String Username;
-    private String email;
-    private String password;
+    protected int id;
+    protected String Username;
+    protected String email;
+    protected String password;
 
     public int getId() {
         return id;
@@ -38,4 +40,22 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public static User createUser() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("");
+        System.out.println("Proszę podać login");
+        String username = scan.nextLine();
+        System.out.println("Proszę podać email");
+        String email = scan.nextLine();
+        System.out.println("Proszę podać hasło");
+        String password = scan.nextLine();
+        User user = new User();
+        user.setPassword(password);
+        user.setUsername(username);
+        user.setEmail(email);
+        return user;
+
+    }
 }
+
