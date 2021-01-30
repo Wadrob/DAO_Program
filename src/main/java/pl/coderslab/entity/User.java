@@ -41,21 +41,6 @@ public class User {
         this.password = password;
     }
 
-    public static User createUser() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("");
-        System.out.println("Proszę podać login");
-        String username = scan.nextLine();
-        System.out.println("Proszę podać email");
-        String email = scan.nextLine();
-        System.out.println("Proszę podać hasło");
-        String password = scan.nextLine();
-        User user = new User();
-        user.setPassword(password);
-        user.setUsername(username);
-        user.setEmail(email);
-        return user;
 
-    }
+
 }
-
