@@ -1,7 +1,7 @@
 # DAO_Program
 
-Program that was written in as a workshop for second module of my bootcamp. 
+Programme that was written as a workshop for second module of my bootcamp.
 
-It's simple CRUD with added database in SQL. Program does not use Spring in any form for managing databaste. It can be show and use as a first try to build database program for begginers. 
+It's a simple CRUD with added database in SQL. Programme does not use Spring in any form for managing database. It can be shown and used as a first attempt to build database programmes for begginers.
 
-App has a working BCrypt in it. 
+App has an incorporated, working BCrypt.
